@@ -10,10 +10,10 @@ while fuser /var/lib/dpkg/lock >/dev/null 2>&1 ; do
         3 ) j="/" ;;
     esac
     tput rc
-    echo -en "\r[$j] Waiting for other software managers to finish..." 
+    echo -en "\r[$j] Waiting for other software managers to finish..."
     sleep 0.5
     ((i=i+1))
-done 
+done
 
 export DEBIAN_FRONTEND=noninteractive
 
